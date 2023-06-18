@@ -5,18 +5,19 @@ import React from "react";
 import { store } from "./store";
 import theme from "./styles/theme";
 import {ThemeProvider} from 'styled-components';
-
+import styled from "styled-components";
 import App from "./components/App";
 import { BrowserRouter } from "react-router-dom";
-const div=styled.div`dark: "#170539";`;
+const Content=styled.div`
+background-color:#170539`
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter basename="/">
-      <div>
+      <Content>
       <ThemeProvider theme={theme}>
       <App />
       </ThemeProvider>
-      </div>
+      </Content>
     </BrowserRouter>
   </Provider>,
 
