@@ -9,7 +9,8 @@ import styled from "styled-components";
 import App from "./components/App";
 import { BrowserRouter } from "react-router-dom";
 const Content=styled.div`
-background-color:#170539`;
+background-color:"#170539",
+`;
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter basename="/">
