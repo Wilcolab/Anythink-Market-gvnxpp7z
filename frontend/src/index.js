@@ -17,9 +17,9 @@ ReactDOM.render(
     <BrowserRouter basename="/">
       <Content>
       <ThemeProvider theme={theme}>
-    <StyledBanner props={{theme}}>
+    <StyledBanner props={{theme}}/>
       <App />
-      </StyledBanner>
+      
       </ThemeProvider>
       </Content>
     </BrowserRouter>
