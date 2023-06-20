@@ -8,6 +8,7 @@ import {ThemeProvider} from 'styled-components';
 import styled from "styled-components";
 import App from "./components/App";
 import { BrowserRouter } from "react-router-dom";
+import StyledBanner from "./components/StyledBanner";
 const Content=styled.div`
 background-color:"#170539",
 `;
@@ -16,6 +17,7 @@ ReactDOM.render(
     <BrowserRouter basename="/">
       <Content>
       <ThemeProvider theme={theme}>
+        <StyledBanner props={{theme}}></StyledBanner>
       <App />
       </ThemeProvider>
       </Content>
