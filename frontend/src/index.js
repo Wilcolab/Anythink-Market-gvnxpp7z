@@ -14,15 +14,15 @@ background-color:"#170539",
 `;
 ReactDOM.render(
   <Provider store={store}>
-    <StyledBanner props={{theme}}>
     <BrowserRouter basename="/">
       <Content>
       <ThemeProvider theme={theme}>
+    <StyledBanner props={{theme}}>
       <App />
+      </StyledBanner>
       </ThemeProvider>
       </Content>
     </BrowserRouter>
-      </StyledBanner>
   </Provider>,
 
   document.getElementById("root")
